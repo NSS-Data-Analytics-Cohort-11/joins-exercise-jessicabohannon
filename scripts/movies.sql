@@ -65,7 +65,8 @@ LIMIT 5;
 
 /*6. How many movies in the dataset are distributed by a company which is not headquartered in California? Which of these movies has the highest imdb rating?*/
 
-SELECT s.film_title, r.imdb_rating
+SELECT s.film_title, 
+	r.imdb_rating
 FROM specs AS s
 INNER JOIN distributors AS d
 ON s.domestic_distributor_id = d.distributor_id
